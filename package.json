@@ -1,0 +1,23 @@
+{
+  "name": "devops-math-operations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuiChamon/devops-math-operations.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuiChamon/devops-math-operations/issues"
+  },
+  "homepage": "https://github.com/GuiChamon/devops-math-operations#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

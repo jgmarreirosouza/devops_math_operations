@@ -1,0 +1,42 @@
+name: CI - Math Operations
+run-name: ${{ github.actor }} is running the CI for Math Operations 🚀
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    name: 🏗️ Build and Test on Node.js
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+
+    steps:
+      - name: 📥 Check out repository code
+        uses: actions/checkout@v4
+
+      - name: 🟢 Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: 📦 Install dependencies
+        run: npm install
+        
+      - name: 📦 Install dependencies
+        run: npm install --save-dev jest
+      
+
+      - name: 🧪 Run tests
+        run: npm test
+
+      - name: 📂 List project files
+        run: ls -la
+
+      - name: ✅ Job finished
+        run: echo "🍏 This job's status is ${{ job.status }}."
