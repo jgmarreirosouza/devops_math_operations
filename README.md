@@ -12,7 +12,11 @@ Projeto desenvolvido em **JavaScript** para praticar conceitos de **Integração
 - ➗ Divisão (com tratamento para evitar divisão por zero)  
 
 ## 🧪 Testes  
-Os testes unitários foram criados com **Jest**.  
+Os testes unitários foram criados com **Jest**. 
+
+## Alunos
+- João Gabriel Souza
+- Inácio Custódio Silva
 
 ### Rodando os testes
 ```bash
